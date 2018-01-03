@@ -1,0 +1,42 @@
+{
+  "name": "sensitive-words",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words.",
+  "main": "build/index.js",
+  "scripts": {
+    "watch": "npm-watch",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "watch": {
+    "build": "src/*.js"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-runner/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "przemek <przemek@devrunner.pl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dev-runner/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/dev-runner/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^22.0.4",
+    "npm-watch": "^0.3.0"
+  }
+}
